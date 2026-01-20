@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — M. M. Zendera — GIS Analyst & Surveyor</title>
+  <meta name="description" content="Portfolio of M. M. Zendera, GIS Analyst & Surveyor experienced in engineering survey projects, remote sensing, and GIS." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="branding">
+        <h1 class="logo">M. M. Zendera</h1>
+        <p class="tagline">GIS Analyst & Surveyor — Engineering Survey • Remote Sensing • GIS</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="profile-card">
+          <div class="profile-media">
+            <img id="profilePic" src="profile-placeholder.jpg" alt="Profile picture of M. M. Zendera" />
+            <label class="file-label">
+              <input id="fileInput" type="file" accept="image/*" />
+              Change photo
+            </label>
+          </div>
+          <div class="profile-info">
+            <h2>M. M. Zendera</h2>
+            <p class="muted">GIS Analyst & Surveyor</p>
+            <p>
+              Experienced in engineering survey projects, UAV photogrammetry, LiDAR processing, and delivering GIS
+              solutions for infrastructure, utilities, and environmental studies.
+            </p>
+            <div class="contact-quick">
+              <a href="mailto:mmzendera@mail.com" class="contact-link">mmzendera@mail.com</a>
+              <span class="sep">•</span>
+              <a href="tel:0788118354" class="contact-link">0788118354</a>
+            </div>
+            <p class="cta-row">
+              <a class="btn" href="#projects">View Projects</a>
+              <a class="btn outline" href="#contact">Contact</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-features">
+          <h3>Core Services</h3>
+          <ul class="feature-list">
+            <li>Survey control & topographic mapping (GNSS RTK/PPK, Total Station)</li>
+            <li>UAV photogrammetry & LiDAR processing (orthomosaics, DEM/DTM)</li>
+            <li>GIS database design, PostGIS, QGIS/ArcGIS Pro workflows</li>
+            <li>Automation & analysis with Python (GDAL, rasterio, geopandas)</li>
+          </ul>
+          <div class="stats">
+            <div><strong>8+</strong><span>Years experience</span></div>
+            <div><strong>100+</strong><span>Projects</span></div>
+            <div><strong>50+</strong><span>UAV Flights / LiDAR campaigns</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>
+        I combine field surveying (GNSS, total station) with remote sensing (UAV imagery, LiDAR, Sentinel) and spatial
+        analysis to produce accurate, actionable deliverables for engineering and infrastructure projects. I specialize in
+        survey control, photogrammetry, point-cloud processing, and geodatabase management.
+      </p>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h3>Technical Skills</h3>
+      <ul class="skill-list">
+        <li>Survey: GNSS RTK/PPK, Total Station, Field QA/QC, Control Networks</li>
+        <li>Remote Sensing: UAV Photogrammetry, LiDAR Processing, Sentinel & Landsat</li>
+        <li>GIS: QGIS, ArcGIS Pro, PostGIS, cartography</li>
+        <li>Programming: Python (GDAL, rasterio, geopandas), SQL</li>
+        <li>Deliverables: Orthomosaics, DEM/DTM, contours, as-built plans, geodatabases</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Selected Projects</h3>
+
+      <div class="project-filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="survey">Engineering Survey</button>
+        <button class="filter" data-filter="remote">Remote Sensing</button>
+        <button class="filter" data-filter="gis">GIS</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-type="survey">
+          <img src="https://via.placeholder.com/640x360?text=Bridge+Survey" alt="Bridge survey plan" />
+          <div class="card-content">
+            <h4>Bridge Alignment & Survey Control</h4>
+            <p class="muted">Engineering Survey</p>
+            <p>
+              Performed control network design and GNSS/total station surveys for a multi-span bridge. Delivered
+              reference control, topographic surfaces, and as-built alignment drawings.
+            </p>
+            <ul>
+              <li>Tools: Trimble GNSS, Leica total station, AutoCAD, QGIS</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="remote">
+          <img src="https://via.placeholder.com/640x360?text=UAV+Orthomosaic" alt="UAV orthomosaic" />
+          <div class="card-content">
+            <h4>UAV Photogrammetry & Topographic Mapping</h4>
+            <p class="muted">Remote Sensing</p>
+            <p>
+              Executed UAV flights, processed imagery into orthomosaic and DEM, and derived contours for cut/fill
+              estimation on a civil engineering project.
+            </p>
+            <ul>
+              <li>Tools: Pix4D/Agisoft, QGIS, Python</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="gis">
+          <img src="https://via.placeholder.com/640x360?text=Asset+Management+GIS" alt="GIS web map" />
+          <div class="card-content">
+            <h4>Utility Asset Management System</h4>
+            <p class="muted">GIS</p>
+            <p>
+              Built a PostGIS-backed asset inventory with spatial queries, automated ETL from field data, and interactive
+              maps for operations.
+            </p>
+            <ul>
+              <li>Tools: PostgreSQL/PostGIS, QGIS, Python (psycopg2, geopandas)</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>
+        Interested in collaborating on survey, remote sensing, or GIS projects? Contact me:
+      </p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:mmzendera@mail.com">mmzendera@mail.com</a></li>
+        <li>Phone: <a href="tel:0788118354">0788118354</a></li>
+        <li>Location: Example City, Country</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2026 M. M. Zendera — GIS Analyst & Surveyor • Built with HTML, CSS & JS</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
